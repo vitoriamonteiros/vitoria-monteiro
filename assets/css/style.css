@@ -1,0 +1,97 @@
+/* Reset de Margens e Padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  background-color: #191919;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Menu Fixo */
+.menu-fixo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #19191936; /* Transparência do fundo */
+  backdrop-filter: blur(5px); /* Efeito de desfoque */
+  z-index: 10; /* Para garantir que fique acima de outros elementos */
+}
+
+.menu-fixo .logo img {
+  height: 30px;
+}
+
+/* Estilização do Menu */
+.menu-fixo nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-fixo nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Cor do texto do menu */
+  font-weight: bold;
+}
+
+.botao-orcamento {
+  padding: 8px 16px;
+  background-color: #7e22ce; /* Cor de destaque do botão */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Seção de Cabeçalho com Imagem de Fundo */
+.header-imagem {
+  height: 100vh; /* Altura total da tela */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top:0; /* Para compensar a altura do menu fixo */
+}
+
+/* Overlay para Texto na Imagem */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparência para o overlay */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+.header-imagem h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.botao-acao {
+  padding: 12px 24px;
+  background-color: #7e22ce;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Conteúdo da Página */
+main {
+  padding: 20px; /* Espaçamento interno para as seções */
+}
+
